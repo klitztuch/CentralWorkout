@@ -1,0 +1,53 @@
+﻿@inherits LayoutComponentBase
+
+<MudThemeProvider Theme="@_myCustomTheme"/>
+<MudDialogProvider/>
+<MudSnackbarProvider/>
+
+<MudLayout>
+    <MudMainContent>
+        <MudContainer MaxWidth="MaxWidth.Large" Class="my-16 pt-16">
+            @Body
+        </MudContainer>
+    </MudMainContent>
+    <MudAppBar Elevation="4" Bottom="true">
+        <MudToolBar Class="d-flex justify-space-around flex-grow-1 gap-4">
+            <MudIconButton Icon="@Icons.Material.Filled.FitnessCenter" 
+                           Color="Color.Primary"
+                           Href="WorkoutList"/>
+            <MudIconButton Icon="@Icons.Material.Filled.BarChart" 
+                           Color="Color.Primary"
+                           Href="Progress"/>
+            <MudIconButton Icon="@Icons.Material.Filled.Star" 
+                           Color="Color.Primary"
+                           Href="Discover"/>
+            <MudIconButton Icon="@Icons.Material.Filled.Settings" 
+                           Color="Color.Primary"
+                           Href="Settings"/>
+        </MudToolBar>
+    </MudAppBar>
+</MudLayout>
+
+@code {
+
+    readonly MudTheme _myCustomTheme = new()
+    {
+        Palette = new PaletteLight
+        {
+            Primary = Colors.Grey.Default,
+            Secondary = Colors.Red.Accent4,
+            AppbarBackground = Colors.Shades.Black,
+            Background = Colors.Shades.Black
+        },
+        PaletteDark = new PaletteDark
+        {
+            Primary = Colors.Blue.Lighten1
+        },
+
+        LayoutProperties = new LayoutProperties
+        {
+            DrawerWidthLeft = "260px",
+            DrawerWidthRight = "300px"
+        }
+    };
+}

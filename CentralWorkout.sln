@@ -1,0 +1,31 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31717.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentralWorkout.Frontend", "CentralWorkout.Frontend\CentralWorkout.Frontend.csproj", "{B68D6536-9BD5-4973-9BF7-5723CB196211}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CentralWorkout.Wasm", "CentralWorkout.Wasm\CentralWorkout.Wasm.csproj", "{9BF5AC5A-A001-4F6D-8DD6-A0040AB43698}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B68D6536-9BD5-4973-9BF7-5723CB196211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B68D6536-9BD5-4973-9BF7-5723CB196211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B68D6536-9BD5-4973-9BF7-5723CB196211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B68D6536-9BD5-4973-9BF7-5723CB196211}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BF5AC5A-A001-4F6D-8DD6-A0040AB43698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BF5AC5A-A001-4F6D-8DD6-A0040AB43698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BF5AC5A-A001-4F6D-8DD6-A0040AB43698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BF5AC5A-A001-4F6D-8DD6-A0040AB43698}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {977D9C1A-781D-4886-9644-F811D831A489}
+	EndGlobalSection
+EndGlobal
